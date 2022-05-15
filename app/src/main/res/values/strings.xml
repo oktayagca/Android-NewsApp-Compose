@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android-NewsApp-Compose</string>
+    <string name="news_list">News List</string>
+    <string name="news_detail">News Detail</string>
+</resources>

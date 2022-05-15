@@ -1,0 +1,27 @@
+pluginManagement {
+    plugins{
+        id  'dagger.hilt.android.plugin'
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'dagger.hilt.android.plugin') {
+                useModule("com.google.dagger:hilt-android-gradle-plugin:2.40.5")
+            }
+        }
+    }
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Android-NewsApp-Compose"
+include ':app'
